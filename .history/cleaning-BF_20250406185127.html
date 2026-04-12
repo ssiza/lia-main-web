@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Li'A Home Services - Professional home services for cleaning, laundry, meal preparation, and shopping assistance.">
     <link rel="stylesheet" href="secondary-styles.css">
-    <title> Book Laundry - Li'A Home Services</title>
+    <title>Book Cleaning - Li'A Home Services</title>
 
     <!-- Favicon Links -->
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
@@ -64,8 +64,10 @@
         <a href="get-quote.html" class="btn btn-primary">Get Started</a>
     </nav>
 
+
+
     <section class="service-details" style="margin-top: 7rem;">
-      <h2 class="service-title">Laundry Services – Book Now</h2>
+      <h2 class="service-title">Cleaning Services - Book Now</h2>
       <form action="https://formspree.io/f/mdkkarnp" method="post" class="booking-form">
           <div>
               <label for="name">Name:</label>
@@ -91,30 +93,30 @@
               <input type="email" id="email" name="email" required>
           </div>
 
-          <div>
-              <label>Select Services:</label>
+            <div>
+              <label>Select Areas:</label>
               <div class="service-checklist">
                   <ul class="checklist-options">
-                      <li>
-                          <input type="checkbox" id="laundry-1load" name="service_options" value="1 Load">
-                          <label for="laundry-1load">1 Load</label>
-                      </li>
-                      <li>
-                          <input type="checkbox" id="laundry-2loads" name="service_options" value="2 Loads">
-                          <label for="laundry-2loads">2 Loads</label>
-                      </li>
-                      <li>
-                          <input type="checkbox" id="laundry-3loads" name="service_options" value="3 Loads">
-                           <label for="laundry-3loads">3 Loads</label>
-                      </li>
                        <li>
-                            <input type="checkbox" id="laundry-heavyload" name="service_options" value="Heavy-Duty Load">
-                           <label for="laundry-heavyload">Heavy-Duty Load</label>
-                       </li>
-                  </ul>
-                  <input type="hidden" id="service" name="service" value="">
-              </div>
-          </div>
+                          <input type="checkbox" id="area-kitchen" name="service_options" value="Kitchen">
+                          <label for="area-kitchen">Kitchen</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" id="area-livingroom" name="service_options" value="Living Room">
+                          <label for="area-livingroom">Living room</label>
+                      </li>
+                      <li>
+                         <input type="checkbox" id="area-bedroom" name="service_options" value="Bedroom">
+                         <label for="area-bedroom">Bedroom</label>
+                     </li>
+                    <li>
+                        <input type="checkbox" id="area-bathroom" name="service_options" value="Bathroom">
+                         <label for="area-bathroom">Bathroom</label>
+                     </li>
+                 </ul>
+                 <input type="hidden" id="service" name="service" value="">
+            </div>
+         </div>
 
           <div>
               <label for="date">Date:</label>
@@ -144,7 +146,6 @@
           </div>
           <input type="submit" value="Book Now" class="btn-book">
 
-
         <div class="review-overlay">
               <div class="review-section">
                   <h2 class="review-title">Review your booking</h2>
@@ -160,7 +161,7 @@
                       <p><b>Notes:</b> <span id="review-notes"></span></p>
                   </div>
                   <button type="button" class="btn-submit-final">Confirm and Book</button>
-                 <button type="button" class="btn-close-review">Edit Booking</button>
+                  <button type="button" class="btn-close-review">Edit Booking</button>
               </div>
           </div>
       </form>
@@ -335,7 +336,7 @@
       }
     }
     </style>
-      
+     
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
@@ -389,7 +390,7 @@
         </div>
         
         <div class="footer-bottom">
-<p class="footer-bottom-text">© 2025 Li'A Home Services. All rights reserved.</p>
+<p class="footer-bottom-text">© 2023 Li'A Home Services. All rights reserved.</p>
             <p style="text-align: center; font-size: 0.9rem; color: #666; padding: 20px 0; border-top: 1px solid #ddd; margin-top: 40px;">
                 Powered by <a href="https://kflix.me/" style="color: #4CAF50; text-decoration: none; font-weight: 500;" onmouseover="this.style.color='#005fa3'; this.style.textDecoration='underline'" onmouseout="this.style.color='#0077cc'; this.style.textDecoration='none'">Kesny Toussaint</a>
               </p>              <div class="footer-bottom-links">
