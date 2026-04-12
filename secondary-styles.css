@@ -96,22 +96,6 @@ p {
   background-color: var(--primary-dark); position: relative;
 }
 
-.nav-mobile a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--primary);
-  transition: width var(--transition-medium);
-}
-
-.nav-mobile a:hover::after {
-  width: 100%;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 15px rgba(13, 88, 36, 0.25);
-}
 .btn-primary:active {
   transform: translateY(-1px);
   box-shadow: 0 4px 8px rgba(13, 88, 36, 0.2);
@@ -139,22 +123,6 @@ p {
   background-color: var(--secondary-dark); position: relative;
 }
 
-.nav-mobile a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--primary);
-  transition: width var(--transition-medium);
-}
-
-.nav-mobile a:hover::after {
-  width: 100%;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 15px rgba(224, 140, 0, 0.25);
-}
 .btn-quote:active {
   transform: translateY(-1px);
   box-shadow: 0 4px 8px rgba(224, 140, 0, 0.2);
@@ -319,24 +287,6 @@ p {
   margin: 0 auto;
 }
 
-.nav-mobile a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--primary);
-  transition: width var(--transition-medium);
-}
-
-.nav-mobile a:hover::after {
-  width: 100%;
-  z-index: 2;
-  max-width: 800px;
-  padding: 0 30px;
-  color: white;
-}
 .hero-heading {
   font-size: 3.5rem;
   font-weight: 700;
@@ -444,7 +394,7 @@ p {
 /* .service-link:hover::after { */
   transform: translateX(3px);
 }
-.testimonial-info {
+.testimonial-info { flex: 1; display: flex; flex-direction: column; }
 /* Modern testimonials section */
 .testimonials {
   padding: 100px 5%;
@@ -457,20 +407,6 @@ p {
   position: relative;
 }
 
-.nav-mobile a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--primary);
-  transition: width var(--transition-medium);
-}
-
-.nav-mobile a:hover::after {
-  width: 100%;
-}
 .testimonials-header {
   text-align: center;
   margin-bottom: 60px;
@@ -495,24 +431,6 @@ p {
   position: relative;
 }
 
-.nav-mobile a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--primary);
-  transition: width var(--transition-medium);
-}
-
-.nav-mobile a:hover::after {
-  width: 100%;
-  width: 100%;
-  padding: 0 50px;
-  margin: 30px auto;
-  max-width: 900px;
-}
 .testimonial-slider {
   display: flex;
   overflow: hidden;
@@ -522,21 +440,6 @@ p {
   position: relative;
 }
 
-.nav-mobile a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--primary);
-  transition: width var(--transition-medium);
-}
-
-.nav-mobile a:hover::after {
-  width: 100%;
-  height: 350px;
-}
 .testimonial-slide {
   min-width: 100%;
   scroll-snap-align: start;
@@ -684,9 +587,6 @@ p {
     opacity: 1;
     transform: translateY(0);
   }
-}
-  display: flex;
-  flex-direction: column;
 }
 .testimonial-name {
   font-weight: 600;
@@ -926,21 +826,6 @@ p {
   position: relative;
 }
 
-.nav-mobile a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--primary);
-  transition: width var(--transition-medium);
-}
-
-.nav-mobile a:hover::after {
-  width: 100%;
-  overflow: hidden;
-}
 /* .service-item::before { */
   content: "";
   position: absolute;
@@ -959,21 +844,6 @@ section {
   position: relative;
 }
 
-.nav-mobile a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--primary);
-  transition: width var(--transition-medium);
-}
-
-.nav-mobile a:hover::after {
-  width: 100%;
-  overflow: hidden;
-}
 .section-waves {
   position: absolute;
   bottom: 0;
@@ -987,23 +857,6 @@ section {
   position: relative;
 }
 
-.nav-mobile a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--primary);
-  transition: width var(--transition-medium);
-}
-
-.nav-mobile a:hover::after {
-  width: 100%;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 46px;
-}
 .section-waves .shape-fill {
   fill: #FFFFFF;
 }
@@ -1171,22 +1024,6 @@ section {
   position: relative;
 }
 
-.nav-mobile a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--primary);
-  transition: width var(--transition-medium);
-}
-
-.nav-mobile a:hover::after {
-  width: 100%;
-  font-size: 1.1rem;
-  padding: 15px 40px;
-}
 /* Enhance FAQ styling */
 .faq {
   padding: 100px 5%;
@@ -1232,26 +1069,6 @@ section {
   position: relative;
 }
 
-.nav-mobile a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--primary);
-  transition: width var(--transition-medium);
-}
-
-.nav-mobile a:hover::after {
-  width: 100%;
-  outline: none;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background-color 0.3s ease;
-}
 .faq-item summary::after {
   content: "+";
   font-size: 20px;
@@ -1358,26 +1175,6 @@ section {
   position: relative;
 }
 
-.nav-mobile a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--primary);
-  transition: width var(--transition-medium);
-}
-
-.nav-mobile a:hover::after {
-  width: 100%;
-  overflow: hidden;
-  z-index: 1;
-  padding: 30px;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 /* .service-bg { */
   position: absolute;
   bottom: 0;
@@ -1420,29 +1217,6 @@ section {
   position: relative;
 }
 
-.nav-mobile a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--primary);
-  transition: width var(--transition-medium);
-}
-
-.nav-mobile a:hover::after {
-  width: 100%;
-  z-index: 2;
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 25px;
-  border-radius: 8px;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
 /* .service-icon { */
   width: 60px;
   height: 60px;
@@ -1492,30 +1266,6 @@ section {
   position: relative;
 }
 
-.nav-mobile a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--primary);
-  transition: width var(--transition-medium);
-}
-
-.nav-mobile a:hover::after {
-  width: 100%;
-  overflow: hidden;
-  z-index: 1;
-  padding: 30px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: transform var(--transition-medium), box-shadow var(--transition-medium);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
 .service-item:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
@@ -1556,29 +1306,6 @@ section {
   position: relative;
 }
 
-.nav-mobile a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--primary);
-  transition: width var(--transition-medium);
-}
-
-.nav-mobile a:hover::after {
-  width: 100%;
-  z-index: 2;
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 25px;
-  border-radius: 8px;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
 .service-icon {
   width: 60px;
   height: 60px;
@@ -1605,23 +1332,8 @@ section {
   font-weight: 600;
   text-decoration: none;
   position: relative;
-
-.nav-mobile a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--primary);
-  transition: width var(--transition-medium);
 }
 
-.nav-mobile a:hover::after {
-  width: 100%;
-  align-self: flex-start;
-  transition: color 0.3s ease;
-}
 .service-link:hover {
   color: #0056b3;
 }
@@ -1704,24 +1416,6 @@ section {
   position: relative;
 }
 
-.nav-mobile a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: var(--primary);
-  transition: width var(--transition-medium);
-}
-
-.nav-mobile a:hover::after {
-  width: 100%;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
 
 .service-link {
   margin-top: auto;

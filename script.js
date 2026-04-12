@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('#review-date').textContent = formData.date;
         document.querySelector('#review-time').textContent = formData.time;
         document.querySelector('#review-notes').textContent = formData.notes;
-        reviewOverlay.classList.add('active');
+        reviewOverlay.style.display = 'flex';
     }
 
     function handleFormSubmit(form, reviewOverlay, serviceInput) {
@@ -296,12 +296,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (closeReviewButton) {
-        closeReviewButton.addEventListener('click', () => reviewOverlay.classList.remove('active'));
+        closeReviewButton.addEventListener('click', () => { reviewOverlay.style.display = 'none'; });
     }
 
     if (finalSubmitButton) {
         finalSubmitButton.addEventListener('click', () => {
-            reviewOverlay.classList.remove('active');
+            reviewOverlay.style.display = 'none';
             form.submit();
         });
     }
@@ -443,32 +443,3 @@ document.addEventListener('DOMContentLoaded', function() {
   setupSectionAnimations();
 });
 
-// Handle "Book Now" button click
-document.querySelector('.btn-book').addEventListener('click', function (event) {
-    event.preventDefault(); // Prevent form submission for review
-    const overlay = document.querySelector('.review-overlay');
-    overlay.style.display = 'flex'; // Show the review overlay
-
-    // Populate review fields with form data
-    document.getElementById('review-name').textContent = document.getElementById('name').value;
-    document.getElementById('review-address').textContent = document.getElementById('address').value;
-    document.getElementById('review-postal-code').textContent = document.getElementById('postal_code').value;
-    document.getElementById('review-phone').textContent = document.getElementById('phone').value;
-    document.getElementById('review-email').textContent = document.getElementById('email').value;
-    document.getElementById('review-service').textContent = Array.from(document.querySelectorAll('input[name="service_options"]:checked'))
-        .map(option => option.value)
-        .join(', ');
-    document.getElementById('review-date').textContent = document.getElementById('date').value;
-    document.getElementById('review-time').textContent = document.getElementById('time').value;
-    document.getElementById('review-notes').textContent = document.getElementById('notes').value;
-});
-
-// Handle "Confirm and Book" button click
-document.querySelector('.btn-submit-final').addEventListener('click', function () {
-    document.querySelector('.booking-form').submit(); // Submit the form
-});
-
-// Handle "Edit Booking" button click
-document.querySelector('.btn-close-review').addEventListener('click', function () {
-    document.querySelector('.review-overlay').style.display = 'none'; // Hide the review overlay
-});
