@@ -30,7 +30,7 @@ export default function Header() {
       }`}
     >
       <div className="section-container">
-        <div className="flex items-center justify-between h-18 py-4">
+        <div className="flex items-center justify-between min-h-[4.5rem] py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 shrink-0">
             <Image

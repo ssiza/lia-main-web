@@ -118,7 +118,7 @@ function openEmailApp(event) {
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
     
-    const mailtoLink = `mailto:info@liahomeservices.com?subject=Website Inquiry from ${name}&body=${message}%0A%0A${name}%0A${email}`;
+    const mailtoLink = `mailto:support@liahomeservices.com?subject=Website Inquiry from ${name}&body=${message}%0A%0A${name}%0A${email}`;
     
     window.location.href = mailtoLink;
 }

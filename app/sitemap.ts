@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next'
+import { getSiteUrl } from '@/lib/site-url'
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://liahomeservices.com'
+const BASE = getSiteUrl()
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

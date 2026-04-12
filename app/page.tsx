@@ -128,6 +128,7 @@ export default function HomePage() {
             alt="Clean modern home"
             fill
             priority
+            sizes="100vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/90 via-primary/80 to-primary/60" />

@@ -101,11 +101,11 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:info@liahomeservices.com"
+                  href="mailto:support@liahomeservices.com"
                   className="flex items-start gap-3 text-sm text-gray-400 hover:text-white transition-colors"
                 >
                   <Mail size={15} className="mt-0.5 shrink-0 text-primary-light" />
-                  info@liahomeservices.com
+                  support@liahomeservices.com
                 </a>
               </li>
               <li className="flex items-start gap-3 text-sm text-gray-400">

@@ -42,7 +42,7 @@ cp .env.local.example .env.local
 
 ```env
 RESEND_API_KEY=re_your_key_here
-NOTIFICATION_EMAIL=info@liahomeservices.com
+NOTIFICATION_EMAIL=support@liahomeservices.com
 FROM_EMAIL=onboarding@resend.dev        # or bookings@liahomeservices.com after domain verification
 NEXT_PUBLIC_SITE_URL=https://liahomeservices.com
 ```
@@ -73,7 +73,7 @@ In your Vercel project → **Settings → Environment Variables**, add:
 | Key | Value |
 |-----|-------|
 | `RESEND_API_KEY` | Your Resend API key |
-| `NOTIFICATION_EMAIL` | `info@liahomeservices.com` |
+| `NOTIFICATION_EMAIL` | `support@liahomeservices.com` |
 | `FROM_EMAIL` | `onboarding@resend.dev` (or verified domain) |
 | `NEXT_PUBLIC_SITE_URL` | `https://yourdomain.com` |
 

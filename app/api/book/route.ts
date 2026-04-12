@@ -85,7 +85,7 @@ function clientEmailHtml(b: BookingBody) {
       </div>
       <p style="color:#374151;font-size:14px;margin:0 0 6px;">Questions? Reach us at:</p>
       <p style="color:#176f33;font-size:14px;font-weight:600;margin:0;">
-        📞 (646) 261-6917 · ✉️ info@liahomeservices.com
+        📞 (646) 261-6917 · ✉️ support@liahomeservices.com
       </p>
     </div>
     <div style="padding:20px 32px;background:#f9f9f9;border-top:1px solid #f0f0f0;">
@@ -111,7 +111,7 @@ export async function POST(request: NextRequest) {
 
     const apiKey = process.env.RESEND_API_KEY
     const FROM   = process.env.FROM_EMAIL || 'onboarding@resend.dev'
-    const TO     = process.env.NOTIFICATION_EMAIL || 'info@liahomeservices.com'
+    const TO     = process.env.NOTIFICATION_EMAIL || 'support@liahomeservices.com'
 
     if (!apiKey) {
       console.log('⚠️  RESEND_API_KEY not set — booking logged to console:')

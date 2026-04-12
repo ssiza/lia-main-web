@@ -54,14 +54,14 @@ export default function BookPage() {
                     </div>
                   </a>
                   <a
-                    href="mailto:info@liahomeservices.com"
+                    href="mailto:support@liahomeservices.com"
                     className="flex items-center gap-3 text-sm text-gray-600 hover:text-primary transition-colors"
                   >
                     <div className="w-9 h-9 rounded-xl bg-primary-50 text-primary flex items-center justify-center shrink-0">
                       <Mail size={16} />
                     </div>
                     <div>
-                      <div className="font-semibold text-gray-900">info@liahomeservices.com</div>
+                      <div className="font-semibold text-gray-900">support@liahomeservices.com</div>
                       <div className="text-xs text-gray-400">We reply within a few hours</div>
                     </div>
                   </a>

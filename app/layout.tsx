@@ -3,10 +3,11 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { getSiteUrl } from '@/lib/site-url'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://liahomeservices.com'
+const siteUrl = getSiteUrl()
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     title: "Li'A Home Services | Professional Home Care in Everett, MA",
     description:
       'Licensed & insured home services — cleaning, laundry, meal prep, and shopping — serving Everett, MA and surrounding areas.',
-    images: [{ url: '/img/hero-background-1.png', width: 1200, height: 630, alt: "Li'A Home Services" }],
+    images: [{ url: '/img/hero-background-1.png', width: 2400, height: 1600, alt: "Li'A Home Services" }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={inter.variable} data-scroll-behavior="smooth">
       <body className="font-sans antialiased">
         <Header />
         <main>{children}</main>

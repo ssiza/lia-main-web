@@ -82,6 +82,7 @@ export default function AboutPage() {
                   src="/img/hero-background-1.png"
                   alt="Li'A Home Services team"
                   fill
+                  sizes="(max-width: 1023px) 100vw, 50vw"
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-primary/20" />
@@ -155,7 +156,7 @@ export default function AboutPage() {
                 </a>
 
                 <a
-                  href="mailto:info@liahomeservices.com"
+                  href="mailto:support@liahomeservices.com"
                   className="flex items-center gap-4 p-4 rounded-2xl border border-gray-100 hover:border-primary-100 hover:bg-primary-50 transition-colors group"
                 >
                   <div className="w-10 h-10 rounded-xl bg-primary-50 text-primary group-hover:bg-primary group-hover:text-white flex items-center justify-center transition-colors">
@@ -163,7 +164,7 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <div className="text-xs text-gray-400 font-medium uppercase tracking-wide">Email</div>
-                    <div className="font-semibold text-gray-900">info@liahomeservices.com</div>
+                    <div className="font-semibold text-gray-900">support@liahomeservices.com</div>
                   </div>
                 </a>
 
