@@ -17,6 +17,12 @@
 .DS_Store
 *.pem
 
+# editor local history (Cursor / VS Code)
+.history/
+
+# local secrets — copy from .env.local.example
+.env
+
 # debug
 npm-debug.log*
 yarn-debug.log*

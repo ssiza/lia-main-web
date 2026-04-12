@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-4">
+            <Link href="/" prefetch={false} className="flex items-center gap-3 mb-4">
               <Image src="/img/logo.png" alt="Li'A Home Services" width={40} height={40} className="rounded-xl" />
               <span className="font-bold text-white text-lg">Li&apos;A Home Services</span>
             </Link>
@@ -60,6 +60,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
+                    prefetch={false}
                     className="text-gray-400 hover:text-white transition-colors text-sm"
                   >
                     {link.label}
@@ -77,6 +78,7 @@ export default function Footer() {
                 <li key={s.href}>
                   <Link
                     href={s.href}
+                    prefetch={false}
                     className="text-gray-400 hover:text-white transition-colors text-sm"
                   >
                     {s.label}

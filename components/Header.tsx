@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import { Menu, X, Phone } from 'lucide-react'
 
 const navLinks = [
@@ -12,8 +13,23 @@ const navLinks = [
 ]
 
 export default function Header() {
+  const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    setMenuOpen(false)
+  }, [pathname])
+
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 768px)')
+    const syncMenu = () => {
+      if (mq.matches) setMenuOpen(false)
+    }
+    syncMenu()
+    mq.addEventListener('change', syncMenu)
+    return () => mq.removeEventListener('change', syncMenu)
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
@@ -32,7 +48,7 @@ export default function Header() {
       <div className="section-container">
         <div className="flex items-center justify-between min-h-[4.5rem] py-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 shrink-0">
+          <Link href="/" prefetch={false} className="flex items-center gap-3 shrink-0">
             <Image
               src="/img/logo.png"
               alt="Li'A Home Services"
@@ -56,6 +72,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
+                prefetch={false}
                 className={`font-medium transition-colors duration-200 hover:text-primary ${
                   scrolled ? 'text-gray-700' : 'text-white/90 hover:text-white'
                 }`}
@@ -76,7 +93,7 @@ export default function Header() {
               <Phone size={15} />
               (646) 261-6917
             </a>
-            <Link href="/book" className="btn-primary text-sm px-5 py-2.5">
+            <Link href="/book" prefetch={false} className="btn-primary text-sm px-5 py-2.5">
               Book Now
             </Link>
           </div>
@@ -102,7 +119,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                onClick={() => setMenuOpen(false)}
+                prefetch={false}
                 className="px-4 py-3 text-gray-700 font-medium rounded-xl hover:bg-primary-50 hover:text-primary transition-colors"
               >
                 {link.label}
@@ -111,6 +128,7 @@ export default function Header() {
             <div className="mt-3 pt-3 border-t border-gray-100 flex flex-col gap-2">
               <a
                 href="tel:+16462616917"
+                onClick={() => setMenuOpen(false)}
                 className="flex items-center gap-2 px-4 py-3 text-gray-600 font-medium rounded-xl hover:bg-gray-50"
               >
                 <Phone size={16} />
@@ -118,7 +136,7 @@ export default function Header() {
               </a>
               <Link
                 href="/book"
-                onClick={() => setMenuOpen(false)}
+                prefetch={false}
                 className="btn-primary text-center"
               >
                 Book Now
