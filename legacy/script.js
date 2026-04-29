@@ -442,4 +442,3 @@ function setupSectionAnimations() {
 document.addEventListener('DOMContentLoaded', function() {
   setupSectionAnimations();
 });
-
