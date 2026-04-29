@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Phone, Mail, MapPin, Clock, Instagram, Facebook } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, Camera, Users } from 'lucide-react'
 
 const services = [
   { label: 'House Cleaning', href: '/services#cleaning' },
@@ -38,7 +38,7 @@ export default function Footer() {
                 aria-label="Instagram"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary transition-colors"
               >
-                <Instagram size={16} />
+                <Camera size={16} />
               </a>
               <a
                 href="https://www.facebook.com"
@@ -47,7 +47,7 @@ export default function Footer() {
                 aria-label="Facebook"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary transition-colors"
               >
-                <Facebook size={16} />
+                <Users size={16} />
               </a>
             </div>
           </div>
