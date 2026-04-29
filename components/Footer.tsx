@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Phone, Mail, MapPin, Clock, Camera, Users } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock } from 'lucide-react'
+import { FaInstagram, FaFacebookF } from 'react-icons/fa'
 
 const services = [
   { label: 'House Cleaning', href: '/services#cleaning' },
@@ -38,7 +39,7 @@ export default function Footer() {
                 aria-label="Instagram"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary transition-colors"
               >
-                <Camera size={16} />
+                <FaInstagram size={16} />
               </a>
               <a
                 href="https://www.facebook.com"
@@ -47,7 +48,7 @@ export default function Footer() {
                 aria-label="Facebook"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary transition-colors"
               >
-                <Users size={16} />
+                <FaFacebookF size={16} />
               </a>
             </div>
           </div>
